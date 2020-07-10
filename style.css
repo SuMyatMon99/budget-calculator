@@ -1,0 +1,98 @@
+.main{
+    width:700px;
+    height: 500px;
+    border: 3px solid gray;
+    border-radius: 5px;
+    background-color: rgba(203, 219, 190, 0.52);
+    margin-left: auto;
+    margin-right: auto;
+}
+.header{
+    width: 100%;
+    height: 8%;
+    padding:0.5px;
+}
+*{
+    box-sizing: border-box;
+}
+.section{
+    width: 100%;
+    height: 92%;
+}
+.section::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+.left{
+    width: 40%;
+    height: 100%;
+    float: left;
+}
+.firstForm{
+    width: 100%;
+    height: 50%;
+}
+.firstForm form{
+    border: 1px solid rgba(0, 128, 0, 0.575);
+    border-radius: 5px;
+    height: 120px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#btnCalculate{
+    border-color: green;
+    color: green;
+    box-shadow: 0 4px 8px 0 rgba(42, 221, 25, 0.2), 0 6px 20px 0 rgba(148, 187, 39, 0.19);
+}
+.secondForm{
+    width: 100%;
+    height: 55%; 
+}
+.secondForm form{
+    border: 1px solid rgba(255, 0, 0, 0.65);
+    border-radius: 5px;
+    height: 160px;
+    padding: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#btnExpense{
+    border-color: red;
+    color: red;
+    box-shadow: 0 4px 8px 0 rgba(221, 25, 74, 0.2), 0 6px 20px 0 rgba(238, 55, 70, 0.19);
+}
+input{
+    border-radius: 5px;
+}
+.right{
+    width: 60%;
+    height: 100% ;
+    float: left;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 220px 215px;
+    padding: 0;
+    grid-gap: 0;
+}
+.grid-container>div{
+    text-align: center;
+    padding: 0;
+}
+#budgetAmount, #balance, #l{
+    color: green;
+    font-size: 20px;
+}
+#expenseAmount, #l1{
+    color: red;
+    font-size: 20px;
+}
+.item4{
+    grid-column: 1/ span 3;
+}
+th, td{
+    padding-left: 20px;
+}

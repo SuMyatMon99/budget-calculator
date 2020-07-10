@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BudgetApp</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script src="budget.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+    <div class="main">
+        <div class="header">
+            <p>BUDGET APP</p>
+        </div><br>
+        <div class="section">
+            <div class="left">
+                <div class="firstForm">
+                    <form>
+                        <label for="budget">Please Enter Your Budget</label><br>
+                        <input type="text" id="budget" >
+                        <br><br>
+                        <input type="button" onclick="myBudget()" id="btnCalculate" value="Calculate">
+                    </form>
+                </div> 
+                <div class="secondForm">
+                    <form>
+                        <label for="expense">Please Enter Your Expense</label><br>
+                        <input type="text" id="expense">
+                        <br><br>
+                        <label for="amount">Please Enter Expense amount</label><br>
+                        <input type="text" id="amount"><br><br>
+                        <input type="button" onclick="myExpense()" id="btnExpense" value="Add Expense">
+                    </form>
+                </div>
+            </div>
+            <div class="right">
+                <div class="grid-container">
+                    <div>
+                        <label>BUDGET</label><br><br>
+                        <i class="fa fa-money" style="font-size:40px;color:blue;"></i><br><br>
+                        <label id="l">$<span id="budgetAmount"></span></label>
+                    </div>
+                    <div>
+                        <label>EXPENSE</label><br><br>
+                        <i class="fa fa-credit-card" style="font-size:40px;color:blue;"></i><br><br>
+                        <label id="l1">$<span id="expenseAmount"></span></label>
+                    </div>
+                    <div>
+                        <label>BALANCE</label><br><br>
+                        <i class="fa fa-dollar" style="font-size:40px;color: blue;"></i><br><br>
+                        <label id="l">$<span id="balance"></span></label>
+                    </div>  
+                    <div class="item4">
+                        <table id="budgetTable">
+                            <tr>
+                                <th>Expense Title</th>
+                                <th>Expense Value</th>
+                                <th></th>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    </body>
+</html>
